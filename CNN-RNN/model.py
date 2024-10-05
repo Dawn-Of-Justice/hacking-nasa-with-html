@@ -10,16 +10,16 @@ class CNNModel(nn.Module):
         self.relu = nn.ReLU()
         self.maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
         
-        # Calculate the new flattened size
-        # After Conv2d and MaxPool2d, input of size (1, 2555, 131) becomes (16, 1277, 65)
-        self.fc = nn.Linear(16 * 1277 * 65, 1)
+        self.fc1 = nn.Linear(16 * 1277 * 65, 256)
+        self.fc2 = nn.Linear(256, 1)
 
     def forward(self, x):
         x = self.conv1(x)
         x = self.relu(x)
         x = self.maxpool(x)
         x = x.view(x.size(0), -1)  # Flatten the output for the fully connected layer
-        x = self.fc(x)
+        x = self.fc1(x)
+        x = self.fc2(x)
         return x
 
 def train_model(model, train_loader, criterion, optimizer, num_epochs):
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Train the model
-    num_epochs = 10
+    num_epochs = 2
     train_model(model, train_loader, criterion, optimizer, num_epochs)
 
     # Test the model with a single sample
