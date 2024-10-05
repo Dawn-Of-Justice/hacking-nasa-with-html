@@ -147,7 +147,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
+processed_seismic_data.csv
 # pytype static type analyzer
 .pytype/
 
