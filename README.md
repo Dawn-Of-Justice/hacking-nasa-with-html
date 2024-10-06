@@ -13,9 +13,11 @@ Our approach combines several machine learning techniques to create a robust and
 1.  **CNN + RNN Architecture**:
     -   We use a Convolutional Neural Network (CNN) to capture spatial patterns in the seismic waveform data.
     -   A Recurrent Neural Network (RNN) is used to model the sequential nature of seismic events, enhancing the temporal understanding of the signal.
+    -   ![alt text](<images/cnn_rnn.png>)
 
 2.  **Vision-Based Model (U Net)**:
     -   We incorporate a vision model to extract useful features from spectrograms of the seismic data, which helps to differentiate between noise and actual events.
+    ![alt text](images/unet.png)
 
 3.  **Pre-Trained Model (Phasenet)**:
     -   We fine-tune the pre-trained **Phasenet** model, which is specifically designed for seismic event detection. Phasenet is already well-suited for recognizing seismic phases and will complement the other models.
@@ -23,6 +25,7 @@ Our approach combines several machine learning techniques to create a robust and
 4.  **Ensemble Voting Mechanism**:
     - We run all the above model(and maybe models with other architectures) in an ensemble system.
     - The final decision on whether the received signal is noise or an actual seismic event is made through a **voting system**, where the majority vote determines the outcome.
+    ![alt text](<images/ensemble.png>)
 
 ## How It Works
 1.  The seismic data is passed to the CNN + RNN model, U-Net model, and a fine-tuned Phasenet model.
@@ -44,7 +47,6 @@ This ensures robustness, as the ensemble of models increases the accuracy of det
 ## Getting Started
 
 ### Prerequisites
-
 -   Python 3
 -   PyTorch
 -   NumPy
@@ -57,11 +59,9 @@ This ensures robustness, as the ensemble of models increases the accuracy of det
 ### Installation
 
 1.  Clone this repository:   
-    
     `https://github.com/Dawn-Of-Justice/hacking-nasa-with-html.git` 
     
 2.  Install the required packages:
-    
     `pip install -r requirements.txt` 
     
 ## License
