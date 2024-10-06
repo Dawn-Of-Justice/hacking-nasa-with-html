@@ -54,7 +54,7 @@ This ensures robustness, as the ensemble of models increases the accuracy of det
 
 1.  Clone this repository:   
     
-    `[git clone https://github.com/yourusername/planetary-seismic-event-detection.git](https://github.com/Dawn-Of-Justice/hacking-nasa-with-html.git)` 
+    `https://github.com/Dawn-Of-Justice/hacking-nasa-with-html.git` 
     
 2.  Install the required packages:
     
