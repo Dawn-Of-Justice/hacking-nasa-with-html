@@ -65,4 +65,4 @@ This ensures robustness, as the ensemble of models increases the accuracy of det
     `pip install -r requirements.txt` 
     
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the [MIT License](https://github.com/Dawn-Of-Justice/hacking-nasa-with-html/blob/main/LICENSE). See the LICENSE file for details.
