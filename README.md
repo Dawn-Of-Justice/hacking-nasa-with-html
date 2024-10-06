@@ -55,14 +55,6 @@ This ensures robustness, as the ensemble of models increases the accuracy of det
 -   ObsPy (for reading seismic data)
 -   SciPy
 -   Pre-trained Phasenet model and U-Net model
-
-### Installation
-
-1.  Clone this repository:   
-    `https://github.com/Dawn-Of-Justice/hacking-nasa-with-html.git` 
-    
-2.  Install the required packages:
-    `pip install -r requirements.txt` 
     
 ## License
 This project is licensed under the [MIT License](https://github.com/Dawn-Of-Justice/hacking-nasa-with-html/blob/main/LICENSE). See the LICENSE file for details.
