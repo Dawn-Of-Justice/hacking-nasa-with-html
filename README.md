@@ -15,7 +15,7 @@ Our approach combines several machine learning techniques to create a robust and
     -   A Recurrent Neural Network (RNN) is used to model the sequential nature of seismic events, enhancing the temporal understanding of the signal.
     -   ![alt text](<images/cnn_rnn.png>)
 
-2.  **Vision-Based Model (U Net)**:
+2.  **Vision-Based Model (First break picking model)**:
     -   We incorporate a vision model to extract useful features from spectrograms of the seismic data, which helps to differentiate between noise and actual events.
     ![alt text](images/unet.png)
 
