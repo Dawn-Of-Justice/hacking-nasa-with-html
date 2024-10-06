@@ -14,7 +14,7 @@ Our approach combines several machine learning techniques to create a robust and
     
     -   We use a Convolutional Neural Network (CNN) to capture spatial patterns in the seismic waveform data.
     -   A Recurrent Neural Network (RNN) is used to model the sequential nature of seismic events, enhancing the temporal understanding of the signal.
-2.  **Vision-Based Model**:
+2.  **Vision-Based Model (Unet)**:
     
     -   We incorporate a vision model to extract useful features from spectrograms of the seismic data, which helps to differentiate between noise and actual events.
 3.  **Pre-Trained Model (Phasenet)**:
