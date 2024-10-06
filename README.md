@@ -52,19 +52,11 @@ This ensures robustness, as the ensemble of models increases the accuracy of det
 
 ### Installation
 
-1.  Clone this repository:
+1.  Clone this repository:   
     
-    bash
-    
-    Copy code
-    
-    `git clone https://github.com/yourusername/planetary-seismic-event-detection.git` 
+    `[git clone https://github.com/yourusername/planetary-seismic-event-detection.git](https://github.com/Dawn-Of-Justice/hacking-nasa-with-html.git)` 
     
 2.  Install the required packages:
-    
-    bash
-    
-    Copy code
     
     `pip install -r requirements.txt` 
     
@@ -77,17 +69,9 @@ This ensures robustness, as the ensemble of models increases the accuracy of det
     
 2.  Run the training script to fine-tune the models:
     
-    bash
-    
-    Copy code
-    
     `python train.py` 
     
 3.  To analyze new seismic data, use the following command:
-    
-    bash
-    
-    Copy code
     
     `python analyze.py --data your-data-file` 
     
